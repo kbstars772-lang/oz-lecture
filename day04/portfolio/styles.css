@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 20px;
+    border-bottom: 2px solid #333;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    background: #f9f9f9;
+}
+
+/* project + about*/
+
+#about {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.project{
+    padding: 15px; 
+    float: left;
+    width: 30%;          
+    margin: 1.66%;       
+    border: 1px solid #ccc;
+    background: #fafafa;
+}
+
+#projects::after {
+    content: "";
+    display: block;
+    clear: both;
+}   
+
+/*기본 과제: grid 레이아웃  */
+/*
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; */  
+
+
+/* 프로젝트 카드 float 해제 */
+
+
+
+/* 어사이드 */
+
+aside {
+    float: right;
+    width: 25%;  
+    padding: 10px;
+    position: relative;
+    border-left: 3px solid #007bff;
+    margin: 20px;
+}
+
+aside h3 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* 네비 */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    clear: left;
+}
+
+/* 내비게이션 기본과제  */
+/* nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+} */
+
+
+/* 섹션 스타일 */
+
+section {
+    float: left; width: 70%;
+}
+
+
+/* 푸터 */
+
+footer p:first-child {
+    display: none; /* 첫 번째 문단 숨기기 */
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: #f1f1f1;
+    clear: both;
+}
+
+
+/* 제목 스타일 */
+
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
